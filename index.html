@@ -12,31 +12,29 @@
 	   max-width: 100%;
 	   overflow-x: hidden;
 	  }
-      .centerr {
-      height: 120px;
-      position: absolute;
-      right: calc(33% - 100px);
-      vertical-align: middle;
-      }
-      .centerl {
-      height: 150px;
-      position: absolute;
-      left: calc(33% - 100px);
-      vertical-align: middle;
-      top: -25px;
+      .center {
+	  height: 120px;
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	  vertical-align: middle;
       }
       .fromtop {
-      width: 100%;
-      position: absolute;
-      top: 66%;
-      height: 50px;
+	  width: 50%;
+	  position: absolute;
+	  left: 25%;
+	  top: 66%;
+	  height: 150px;
       }
     </style>
   </head>
   <body>
     <div class="fromtop">
-      <td><a href="https://www.youtube.com/"><img src="youtube-logo.png" class="centerl"; ></a></td>
-      <td><a href="https://soundcloud.com"><img src="soundcloud-logo.png" class="centerr";></a></td>
+      <table width="100%">
+	<td width="33%"><a href="https://youtube.com"><img src="youtube-logo.png" class="center"; ></a></td>
+	<td width="33%"><a href="https://netflix.com"><img src="netflix-logo.png" class="center";></a></td>
+	<td width="33%"><a href="https://soundcloud.com"><img src="soundcloud-logo.png" class="center";></a></td>
+      </table>
     </div>
   </body>
 </html>
